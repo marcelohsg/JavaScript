@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando elementos</title>
+</head>
+<body>
+    <h1>Olá, JavaScript!</h1>
+
+    <div id="teste">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis non reprehenderit quam vitae accusamus. Consequuntur, possimus dignissimos blanditiis veniam temporibus placeat ea voluptatem officia veritatis sed ipsam alias, ex odio.</p>
+    </div>
+    <div>
+        <ul>
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+        </ul>
+    </div>
+
+    <button class="botao">Clique em mim!</button>
+
+    <script>
+        let elementos = window.document.getElementsByTagName('h1') //Selecionando através do nome da TAG.
+        document.getElementById('teste') //Selecionando através do ID da TAG, usado pra elementos específicos.
+        document.getElementsByClassName('botao') //Selecionando através da CLASSE da TAG.
+        document.querySelector('#teste') // ou ('.botao') ou ('h1') Seleciona através do CSS. 
+        document.querySelector('li') //Pega o primeiro li apenas
+        document.querySelectorAll('li') //Pega todos os li       
+        
+    </script>
+</body>
+</html>

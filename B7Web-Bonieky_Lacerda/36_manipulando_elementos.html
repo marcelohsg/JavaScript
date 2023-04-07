@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de clique!</title>
+</head>
+<body>
+    <h1>Olá, JavaScript!</h1>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis non reprehenderit quam vitae accusamus. Consequuntur, possimus dignissimos blanditiis veniam temporibus placeat ea voluptatem officia veritatis sed ipsam alias, ex odio.</p>
+    </div>
+    <div id="teste">
+        <ul>
+            <li>Item 01</li>    
+            <li>Item 02</li>
+            <li>Item 03</li>
+        </ul>
+    </div>
+
+    <button class="botao" onclick="clicou()">Clique em mim!</button>
+
+    <script>
+        function clicou() {
+            const teste = document.querySelector('#teste')
+            const ul = teste.querySelector('ul')
+
+            ul.children[0].innerHTML = "Item <strong>alterado</strong>"
+        }
+        
+    </script>
+</body>
+</html>
